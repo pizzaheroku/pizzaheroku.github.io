@@ -1,0 +1,192 @@
+{
+    "_id" : "575073618f99200747fb267e",
+    "name" : "Margarita",
+    "bulk" : "22cm",
+    "cost" : 60,
+    "img" : "pizza-margarita",
+    "section" : "pizza"
+},
+{
+    "_id" : "575073a28f99200747fb2681",
+    "name" : "Pizza Texas",
+    "bulk" : "22cm",
+    "cost" : 60,
+    "img" : "pizza-texas",
+    "section" : "pizza"
+},
+{
+    "_id" : "575074488f99200747fb2684",
+    "name" : "Pizza Spicy",
+    "bulk" : "22cm",
+    "cost" : 100,
+    "img" : "pizza-spicy",
+    "section" : "pizza"
+},
+{
+    "_id" : "5750752f8f99200747fb2687",
+    "name" : "Pizza PaparaZZi",
+    "bulk" : "22cm",
+    "cost" : 85,
+    "img" : "pizza-paparazzi",
+    "section" : "pizza"
+},
+{
+    "_id" : "575077318f99200747fb2688",
+    "name" : "BBQ wings",
+    "bulk" : "290g",
+    "cost" : 50,
+    "img" : "chicken-bbq",
+    "section" : "chicken"
+},
+{
+    "_id" : "575077618f99200747fb2689",
+    "name" : "Chicken strips",
+    "bulk" : "275g",
+    "cost" : 50,
+    "img" : "chicken-strips",
+    "section" : "chicken"
+},
+{
+    "_id" : "575077828f99200747fb268a",
+    "name" : "Spicy wings",
+    "bulk" : "570g",
+    "cost" : 90,
+    "img" : "chicken-spicy",
+    "section" : "chicken"
+},
+{
+    "_id" : "575077a88f99200747fb268b",
+    "name" : "Chicken wings",
+    "bulk" : "290g",
+    "cost" : 50,
+    "img" : "chicken-chicken",
+    "section" : "chicken"
+},
+{
+    "_id" : "575078378f99200747fb268c",
+    "name" : "Salad with spinach",
+    "bulk" : "164g",
+    "cost" : 45,
+    "img" : "salad-spinach",
+    "section" : "salad"
+},
+{
+    "_id" : "575078508f99200747fb268d",
+    "name" : "Chicken salad",
+    "bulk" : "195g",
+    "cost" : 45,
+    "img" : "salad-chicken",
+    "section" : "salad"
+},
+{
+    "_id" : "5750786e8f99200747fb268e",
+    "name" : "Tuna salad",
+    "bulk" : "175g",
+    "cost" : 55,
+    "img" : "salad-tuna",
+    "section" : "salad"
+},
+{
+    "_id" : "5750792f8f99200747fb2690",
+    "name" : "Juince Rich",
+    "bulk" : "1L",
+    "cost" : 24,
+    "img" : "drink-juice",
+    "section" : "drink"
+},
+{
+    "_id" : "5750794c8f99200747fb2691",
+    "name" : "Coca-Cola",
+    "bulk" : "1L",
+    "cost" : 24,
+    "img" : "drink-cola",
+    "section" : "drink"
+},
+{
+    "_id" : "5750796d8f99200747fb2692",
+    "name" : "Sprite",
+    "bulk" : "330 ml",
+    "cost" : 14,
+    "img" : "drink-sprite",
+    "section" : "drink"
+},
+{
+    "_id" : "5750798a8f99200747fb2693",
+    "name" : "Nestea",
+    "bulk" : "500 ml",
+    "cost" : 19,
+    "img" : "drink-nestea",
+    "section" : "drink"
+},
+{
+    "_id" : "575079a18f99200747fb2694",
+    "name" : "BonAqua",
+    "bulk" : "1L",
+    "cost" : 19,
+    "img" : "drink-bonaqua",
+    "section" : "drink"
+},
+{
+    "_id" : "57507a2c8f99200747fb2695",
+    "name" : "Lava Cake",
+    "bulk" : "90g",
+    "cost" : 30,
+    "img" : "desserts-lava",
+    "section" : "desserts"
+},
+{
+    "_id" : "57507a498f99200747fb2696",
+    "name" : "Chocolate muffin",
+    "bulk" : "90g",
+    "cost" : 15,
+    "img" : "desserts-chocolate",
+    "section" : "desserts"
+},
+{
+    "_id" : "57507a6f8f99200747fb2697",
+    "name" : "Cinnamon Bites",
+    "bulk" : "370g",
+    "cost" : 60,
+    "img" : "desserts-bites",
+    "section" : "desserts"
+},
+{
+    "_id" : "57507a848f99200747fb2698",
+    "name" : "Vanilla muffin",
+    "bulk" : "90g",
+    "cost" : 15,
+    "img" : "desserts-vanilla",
+    "section" : "desserts"
+},
+{
+    "_id" : "57507b198f99200747fb2699",
+    "name" : "Cherry Pie",
+    "bulk" : "850g",
+    "cost" : 149,
+    "img" : "other-cherry",
+    "section" : "other"
+},
+{
+    "_id" : "57507b778f99200747fb269a",
+    "name" : "Cheese Bread",
+    "bulk" : "200g",
+    "cost" : 35,
+    "img" : "other-cheese",
+    "section" : "other"
+},
+{
+    "_id" : "57507b9d8f99200747fb269b",
+    "name" : "Potato wedges",
+    "bulk" : "200g",
+    "cost" : 38,
+    "img" : "other-potato",
+    "section" : "other"
+},
+{
+    "_id" : "57507be48f99200747fb269c",
+    "name" : "Pie with Apple",
+    "bulk" : "850g",
+    "cost" : 149,
+    "img" : "other-apple",
+    "section" : "other"
+}
