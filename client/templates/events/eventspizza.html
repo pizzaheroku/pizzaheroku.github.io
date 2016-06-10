@@ -1,0 +1,45 @@
+<template name = "eventspizza">
+  {{#if currentUser}}
+<div class = "container">
+  <div class = "row">
+    <div class ="col-sm-4 col-sm-offset-4">
+        <form class = "apply">
+        {{#each createManipulation}}
+            <div class="menuUsers">
+                <img src="menu/{{img}}.png" alt="{{img}}" width="150px" class="img-circle">
+                <span> {{nameMenu}} // </span>
+                <span>{{name}} //</span>
+                <span>{{bulk}} // {{cost}} ₴ // {{nameUser}}</span>
+                <p>Status {{statusUser}}</p>
+                <input type = "hidden" name = "idEvent" value = "{{_id}}">
+                <input type = "hidden" name = "newStatus" value = "{{statusUser}}">
+                <button class="btn btn-danger delEvent">No</button>
+            </div>
+        {{/each}}
+
+          <button type = "submit" class="btn btn-success" >New status</button>
+          </form>
+      <hr/>
+      My orders
+        <form class = "eventsAnswer">
+        {{#each eventsSelect}}
+            <div class="menuUsers">
+
+                <img src="menu/{{img}}.png" alt="{{img}}" width="150px" class="img-circle">
+                <span> {{nameMenu}} // </span>
+                <span>{{name}} //</span>
+                <span>{{bulk}} // {{cost}} ₴ // {{nameUser}}</span>
+                <p>Status {{statusUser}}</p>
+                <input type = "hidden" name = "idEvent" value = "{{_id}}">
+
+
+                <button class="btn btn-danger delEvent">No</button>
+            </div>
+        {{/each}}
+        <button class="btn btn-success" name = "answer" value ="2">Yes</button>
+      </form>
+    </div>
+  </div>
+</div>
+{{/if}}
+</template>

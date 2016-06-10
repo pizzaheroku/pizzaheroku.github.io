@@ -1,0 +1,66 @@
+/* main template */
+.modal-body{
+  margin-left: 30%;
+}
+
+
+/* groups template */
+.delGroup{
+  cursor: pointer;
+}
+
+.selectedGroup{
+  margin-top: 5px;
+}
+.delGroup{
+  color: red;
+}
+.delUser{
+  position: absolute;
+  right: 0;
+  top: 15px;
+  color: red;
+}
+
+/* menu template */
+
+.menuRow{
+  margin-top: 50px;
+}
+
+.selectMenuRow{
+  margin-top: 50px;
+}
+
+.eatRow{
+  margin-top: 50px;
+}
+
+.imageMenu{
+  width: 180px;
+  height: 180px;
+}
+.menuImagesBlock{
+  height: 380px;
+}
+
+.delMenuElement{
+  position: absolute;
+  right: 0;
+  top: 40%;
+  color: red;
+}
+
+.menuUsers{
+  position: relative;
+}
+
+/* usersmenu template */
+
+.ulMenu{
+  list-style-type: none;
+}
+
+.buttonNewEvent{
+  margin-left:45%;
+}

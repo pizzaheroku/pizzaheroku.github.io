@@ -1,0 +1,50 @@
+<template name = "usersmenu">
+  {{#if currentUser}}
+
+<div class = "container">
+  <div class = "row">
+    <div class = "col-sm-4 col-sm-offset-4">
+    Select group
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          {{#each groupsPiz}}
+            <li><img class="img-circle" src="{{image}}" alt="img" width="50px"> <button class = "btn selectGroup" value = "{{_id}}">{{nameGroup}}</button></li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class = "col-sm-4 col-sm-offset-4">
+        <p>Select Menu</p>
+          <ul class ="ulMenu">
+            {{#each menuSelectAll}}
+              <li><button class = "list-group-item selectMenu" value = "{{this}}">{{this}}</button></li>
+            {{/each}}
+          </ul>
+    </div>
+  </div>
+  <form class = "newEvent">
+  {{#each menuSelect}}
+    <div class="menuUsers">
+      <img src="menu/{{img}}.png" alt="{{img}}" width="150px" class="img-circle">
+      <span>{{name}} //</span>
+      <span>{{bulk}} // {{cost}} ₴ // {{nameUser}}</span>
+    </div>
+    <input type="hidden" name = "idGroup" value = "{{idGroup}}">
+    <input type="hidden" name = "nameMenu" value = "{{nameMenu}}">
+    <input type="hidden" name = "name" value = "{{name}}">
+    <input type="hidden" name = "bulk" value = "{{bulk}}">
+    <input type="hidden" name = "cost" value = "{{cost}}">
+    <input type="hidden" name = "img" value = "{{img}}">
+    <input type="hidden" name = "id" value = "{{id}}">
+    <input type="hidden" name = "nameUser" value = "{{nameUser}}">
+  {{/each}}
+  <button type="submit" class="btn btn-success buttonNewEvent">new event</button>
+  </form>
+</div>
+{{/if}}
+</template>

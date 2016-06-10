@@ -1,0 +1,86 @@
+<template name = "menu">
+  {{#if currentUser}}
+
+  <div class = "row menuRow">
+     <div class = "col-sm-2">
+       <button value = "pizza" class="btn btn-success seeMenu">Pizza</button>
+     </div>
+     <div class = "col-sm-2">
+       <button value = "chicken" class="btn btn-success seeMenu">Chicken</button>
+     </div>
+     <div class = "col-sm-2">
+       <button value = "salad" class="btn btn-success seeMenu">Salads</button>
+     </div>
+     <div class = "col-sm-2">
+       <button value = "drink" class="btn btn-success seeMenu">Drinks</button>
+     </div>
+     <div class = "col-sm-2">
+       <button value = "desserts" class="btn btn-success seeMenu">Desserts</button>
+     </div>
+     <div class = "col-sm-2">
+       <button value = "other" class="btn btn-success seeMenu">Other</button>
+     </div>
+  </div>
+  <div class = "row selectMenuRow">
+    <div class = "col-sm-4 col-sm-offset-3">
+      <form class = "nameMenu">
+
+
+          <input type = "text" name = "newMenu" placeholder ="New menu"> or
+
+            <select name = "selectMenu">
+                <option selected value = "select menu"></option>
+                {{#each menuSelectAll}}
+                <option value = "{{this}}">{{this}}</option>
+                {{/each}}
+            </select>
+
+        <button type = "submit" class="btn btn-primary">Select</button>
+      </form>
+    </div>
+  </div>
+  <div class = "row eatRow">
+    <div class = "col-sm-6">
+      {{#each menuSelect}}
+      <div class="col-sm-6 menuImagesBlock">
+        <div class="thumbnail">
+          <img src="menu/{{img}}.png" alt="{{img}}" class="img-circle imageMenu">
+          <div class="caption">
+            <h3>{{name}}</h3>
+            <p>{{bulk}}</p><p>{{cost}} ₴</p>
+            <form class = "addUserMenu">
+            <input type = "hidden" name = "name" value = "{{name}}">
+            <input type = "hidden" name = "bulk" value = "{{bulk}}">
+            <input type = "hidden" name = "cost" value = "{{cost}}">
+            <input type = "hidden" name = "img" value = "{{img}}">
+            <input type = "hidden" name = "id" value = "{{_id}}">
+            <button type = "submit" class="btn btn-primary add_menu"  role="button">add</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class = "col-sm-6">
+      <p></p>
+
+      <div class="list-group">
+
+            <p href="#" class="list-group-item active">
+                Меню: {{menuName}}
+            </p>
+            {{#each menuUser}}
+              <div class="menuUsers">
+                <img src="menu/{{img}}.png" alt="{{img}}" width="150px" height="150px">
+                <span>{{name}} //</span>
+                <span>{{bulk}} // {{cost}} ₴ // {{nameUser}}</span> <button class="glyphicon glyphicon-remove-sign delMenuElement" value ="" aria-hidden="true"></button>
+              </div>
+            {{/each}}
+
+
+          </div>
+
+    </div>
+  </div>
+  {{/if}}
+</template>

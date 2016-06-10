@@ -1,0 +1,31 @@
+<template name = "main">
+  {{#if currentUser}}
+
+    <!-- Modal -->
+
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h4 class="modal-title">New group</h4>
+          </div>
+          <form class = "add_group" enctype="multipart/form-data">
+          <div class="modal-body">
+
+
+            <label for="crText">Name group:</label><br/>
+            <input type="text" name="nameGroup" id="crText"><br/><br/>
+            <span>Logo group:</span>
+            <input type="file" name="groupImage" id="groupImage">
+
+
+          </div>
+          <div class="modal-footer">
+
+            <button type="submit" class="btn btn-success">Create</button>
+          </div>
+          </form>
+        </div>
+      </div>
+
+  {{/if}}
+</template>

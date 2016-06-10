@@ -1,0 +1,86 @@
+<template name = "groups">
+  {{#if currentUser}}
+
+<div class = "container">
+  <div class = "row">
+    <div class = "col-sm-2 col-sm-offset-4">
+    Select group
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          {{#each groupsPiz}}
+            <li><button class = "list-group-item selectGroup" value = "{{_id}}">{{nameGroup}}</button></li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class = "col-sm-3 selectedGroup">
+      {{#each selGroup}}
+
+        Selected group:  {{nameGroup}}
+        <span class="glyphicon glyphicon-remove-circle delGroup" aria-hidden="true"></span>
+      {{/each}}
+    </div>
+  </div>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div id="collapse" class="panel-collapse collapse on">
+        <div class = "row">
+          <div class = "col-sm-3 col-sm-offset-2">
+              <div class="list-group">
+                <a href="#" class="list-group-item active">
+                  All users
+                </a>
+                {{#each usersPiz}}
+                {{#if profile.name}}
+                <button href="#" class="list-group-item haveUsers" value = "{{_id}}">{{profile.name}}</button>
+                {{/if}}
+                {{#if username}}
+                <button href="#" class="list-group-item haveUsers" value = "{{_id}}">{{username}}</button>
+                {{/if}}
+
+                {{/each}}
+              </div>
+          </div>
+          <div class = "col-sm-3 col-sm-offset-2">
+              <div class="list-group">
+                {{#each selGroup}}
+                <p href="#" class="list-group-item active">
+                    {{nameGroup}}
+                </p>
+                {{/each}}
+                {{#each selNameGroup}}
+                  {{#if profile.name}}
+                  <button href="#" value = "{{_id}}" class="list-group-item delUserButton">{{profile.name}}<span class="glyphicon glyphicon-remove-sign delUser" aria-hidden="true"></span></button>
+                  {{/if}}
+                  {{#if username}}
+                  <button href="#" value = "{{_id}}" class="list-group-item delUserButton">{{username}}<span class="glyphicon glyphicon-remove-sign delUser" aria-hidden="true"></span></button>
+                  {{/if}}
+                {{/each}}
+
+
+              </div>
+          </div>
+        </div>
+      </div>
+          <div class = "row">
+              <div class = "col-sm-2 col-sm-offset-5">
+                <a class = "button_close" data-toggle="collapse" data-parent="#accordion" href="#collapse">
+                   <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span><br/>
+                   <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                </a>
+              </div>
+          </div>
+    </div>
+  </div>
+
+  {{> menu}}
+
+
+
+
+</div>
+{{/if}}
+</template>
